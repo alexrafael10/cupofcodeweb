@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html ng-app="MainApp">
+  <head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="Robots" content="index, follow">
+    <!-- CSS Imports -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cup Of Code</title>
+  </head>
+  <body ng-controller="mainController" class="ng-cloak">
+
+
+  <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper container">
+        <a class="left hide-on-small-only" href="#" class="brand-logo">
+              <img src="/assets/logo.png" alt="cupofcode" class="responsive-img" />
+        </a>
+          <div>
+            <ul class="right hide-on-small-only">
+              <li><a href="#home" active>Inicio</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <li><a href="#about">Nosotros</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <ul class="center-align hide-on-med-and-up">
+              <li><a href="#home" active>Inicio</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <li><a href="#about">Nosotros</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  <section id="home" class="white-section row scrollspy">
+        <div class="slider fullscreen">
+          <ul class="slides">
+            <li>
+              <img src="assets/tp-bg.png" class="responsive-img">
+              <div class="caption center-align">
+                <h3 class="title">Su web soñada en poco tiempo</h3>
+                <h5 class="txt">Construimos su web con todos sus requerimientos. Imag&iacute;nelo y lo hacemos realidad</h5>
+                <a class="btn" href="#portfolio">Portafolio</a>
+              </div>
+            </li>
+            <li>
+              <img src="assets/tp-bg.png" class="responsive-img">
+              <div class="caption center-align">
+                <h3 class="title">Contacte con nosotros</h3>
+                <h5 class="txt">Le respondemos en la brevedad, con toda la información solicitada</h5>
+                <a class="btn" href="#contact">Contacto</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+  </section>
+
+  <section id="services" class="dark-section row scrollspy">
+    <div class="container">
+      <h3 class="title center"> ¿Que Ofrecemos? </h3>
+      <div class="ch-grid">
+        <div class="row">
+          <div class="col s12 m3 center">
+            <div class="single-item">
+          		<div class="ch-item ch-img">
+          			<div class="ch-info">
+          				<h3>Sitios Web</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+          <div class="col s12 m3 center">
+            <div class="single-item center">
+          		<div class="ch-item ch-img">
+          			<div class="ch-info">
+          				<h3>Comercio Electronico</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+          <div class="col s12 m3 center">
+            <div class="single-item">
+          		<div class="ch-item ch-img">
+          			<div class="ch-info">
+          				<h3>App Movil</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+          <div class="col s12 m3 center">
+            <div class="single-item center">
+          		<div class="ch-item ch-img">
+          			<div class="ch-info">
+          				<h3>Diseño Grafico</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="white-section row scrollspy">
+    <div class="jobs container">
+      <h3 class="center-align">Nuestros Trabajos</h3>
+      <div class="row option-box">
+        <div class="web-jobs col s6 center-align">
+          <a class="" href="#" ng-click="pressed = 'android'"><img class="button-img" src="assets/android-logo.png" alt="" /></a>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="android-jobs col s6 center-align">
+          <a class="" href="#" ng-click="pressed = 'web'"><img class="button-img" src="assets/web-logo.png" alt="" /></a>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio-web" class="dark-section" ng-show="pressed == 'web'">
+    <!-- <div class="container"> -->
+      <div class="caption-style-1">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>
+
+  <section id="portfolio-movil" class="white-section" ng-show="pressed == 'android'">
+    <!-- <div class="container"> -->
+      <div class="caption-style-1">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg2.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg2.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg2.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="item">
+              <a href="https://www.google.co.ve">
+                <img src="/assets/bg2.jpg" alt="">
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>
+
+  <section id="about" class="white-section row scrollspy">
+    <div class="container">
+      <div class="about-container">
+        <h3 class="title center"> Conócenos </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="profile">
+              <div class="image-info">
+                <img class="circle" src="/assets/profile.jpg" alt="" />
+              </div>
+              <div class="personal-info">
+                <h5> Joan Gil </h5>
+                <h6> Desarrollador Web & Diseñador Grafico </h6>
+                <p>
+                  <ul>
+                    <li class="twitter"> <a href="#"></a> </li>
+                    <li class="instagram"> <a href="#"></a> </li>
+                  </ul>
+                </p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="warshout"><i class="material-icons">comment</i>
+                  quote or something about you
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="profile">
+              <div class="image-info">
+                <img class="circle" src="/assets/profile.jpg" alt="" />
+              </div>
+              <div class="personal-info">
+                <h5> Wuilkys Becerra </h5>
+                <h6> Experto en ataques DDos, Tiene 10 novias </h6>
+                <p>
+                  <ul>
+                    <li class="twitter"> <a href="#"></a> </li>
+                    <li class="instagram"> <a href="#"></a> </li>
+                  </ul>
+                </p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="warshout"><i class="material-icons">comment</i>
+                  quote or something about you
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="profile">
+              <div class="image-info">
+                <img class="circle" src="http://tinyurl.com/motaFace" alt="" />
+              </div>
+              <div class="personal-info">
+                <h5> Jes&uacute;s Mota </h5>
+                <h6> Desarrolador Web & Android </h6>
+                <p>
+                  <ul>
+                    <li class="twitter"> <a href="#"></a> </li>
+                    <li class="instagram"> <a href="#"></a> </li>
+                  </ul>
+                </p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="warshout"><i class="material-icons">comment</i>
+                  Visita mi Web: <a href="http://mota.com.ve">mota.com.ve</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="profile">
+              <div class="image-info">
+                <img class="circle" src="/assets/profile.jpg" alt="" />
+              </div>
+              <div class="personal-info">
+                <h5> Alexis Rond&oacute;n </h5>
+                <h6> Desarrollador Web & Desarrollador Android </h6>
+                <p>
+                  <ul>
+                    <li class="twitter"> <a href="#"></a> </li>
+                    <li class="instagram"> <a href="#"></a> </li>
+                  </ul>
+                </p>
+                <p class="description">
+                  Estudiante de Ingeniería en Informática, Apasionado por las tecnologías de la información.
+                </p>
+                <p class="warshout"><i class="material-icons">comment</i>
+                  Your web is going to be LEGEND ...wait for it... DARY
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="profile">
+              <div class="image-info">
+                <img class="circle" src="/assets/profile.jpg" alt="" />
+              </div>
+              <div class="personal-info">
+                <h5> Luisana Sandoval </h5>
+                <h6> Desarrollador Android & Desarrollador Web</h6>
+                <p>
+                  <ul>
+                    <li class="twitter"> <a href="#"></a> </li>
+                    <li class="instagram"> <a href="#"></a> </li>
+                  </ul>
+                </p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="warshout"><i class="material-icons">comment</i>
+                  quote or something about you
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="profile">
+              <div class="image-info">
+                <img class="circle" src="/assets/profile.jpg" alt="" />
+              </div>
+              <div class="personal-info">
+                <h5> Cesar Silva </h5>
+                <h6> Gerente & Representante Internacional </h6>
+                <p>
+                  <ul>
+                    <li class="twitter"> <a href="#"></a> </li>
+                    <li class="instagram"> <a href="#"></a> </li>
+                  </ul>
+                </p>
+                <p class="description">
+                Graduado de la universidad internacional de la Florida en gerencia y negocios internacionales. Perfecci&oacute;n puntualidad y sobre todo trabajo en equipo para hacer cada trabajo &uacute;nico y especial
+                </p>
+                <p class="warshout"><i class="material-icons">comment</i>
+                  If destroy still true!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="dark-section row scrollspy">
+    <div class="front" id="front">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="info">
+              <h3 class="title center"> Contactanos </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p><i class="medium material-icons"> email </i>
+                  <a href="mailto:cupcode.dev@gmail.com">cupcode.dev@gmail.com</a>
+                </p>
+                <p><i class="medium material-icons"> email </i>
+                  <a href="mailto:masterv@cupofcodeteam.com">master@cupofcodeteam.com</a>
+                </p>
+              </p>
+            </div>
+            <div class="center">
+                <a class="btn" onclick="changeContact()">Contacto directo</a>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="info-image">
+              <img src="/assets/bg.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col s8">
+          <h3>Informacion de contacto</h3>
+        </div>
+        <div class="col s4">
+          <a onclick="changeContact()">Enviar un Mensaje</a>
+        </div> -->
+      </div>
+    </div>
+    <div class="back" id="back">
+      <div class="container">
+        <div class="row">
+            <h3 class="title center">Escribenos directamente</h3>
+          <form class="col s12">
+            <div class="row">
+               <div class="input-field col s12 m6">
+                 <i class="material-icons prefix">account_circle</i>
+                 <input id="icon_prefix" type="text" class="validate" ng-model="mailData.user">
+                 <label for="icon_prefix">Nombre de Contacto</label>
+               </div>
+               <div class="input-field col s12 m6">
+                 <i class="material-icons prefix">phone</i>
+                 <input id="icon_telephone" type="tel" class="validate" ng-model="mailData.phone">
+                 <label for="icon_telephone">Telefono</label>
+               </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mail</i>
+                <input id="icon_telephone" type="email" class="validate" ng-model="mailData.mail">
+                <label for="icon_telephone">Correo Electronico</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea" ng-model="mailData.message"></textarea>
+                <label for="icon_prefix2">Mensaje</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="center">
+                    <a class="btn col s12 m5 offset-m1" ng-click="sendMail()">Enviar</a>
+              </div>
+              <div class="center">
+                  <a class="btn col s12 m5 offset-m1" onclick="changeContact()">Regresar</a>
+              </div>
+
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/core.js"></script>
+    <script type="text/javascript">
+      var contact_section = true;
+
+      $( document ).ready(function()
+      {
+          $('.scrollspy').scrollSpy();
+          $(".button-collapse").sideNav();
+          $('.slider').slider({
+            indicators: false,
+            interval: 7000,
+          });
+          $('#back').fadeOut();
+          $('.parallax').parallax();
+
+      });
+
+
+      function changeContact()
+      {
+
+        if(contact_section)
+        {
+          contact_section = false;
+          $('#front').fadeOut(500, function()
+          {
+            $('#back').fadeIn(1250);
+          });
+
+        }
+        else
+        {
+          contact_section = true;
+          $('#back').fadeOut(500,function()
+          {
+            $('#front').fadeIn(1250);
+          });
+
+        }
+      }
+    </script>
+  </body>
+</html>
