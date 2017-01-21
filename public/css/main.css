@@ -1,4 +1,8 @@
 /* Nav bar*/
+
+.home-bg{
+
+}
 body > div.navbar-fixed > nav > div > a > img {
     width: 90%;
 }
