@@ -1,6 +1,6 @@
 {
   "name": "cupofcodeweb",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/cupofcodeteam/cupofcodeweb.git"
   },
-  "author": "Cup of Code Team",
+  "author": "Cup of code devs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cupofcodeteam/cupofcodeweb/issues"
