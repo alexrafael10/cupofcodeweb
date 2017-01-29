@@ -1,0 +1,209 @@
+/* headings and base text*/
+h1,h2,h3,h4{
+  margin-top: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: #92A54D;
+}
+
+p{
+  text-align: center;
+}
+
+
+
+/* Nav-Bar */
+
+.navbar-fixed-top{
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  padding: 5px 0 !important;
+  border-radius: 2px;
+}
+
+.navbar-fixed-top .navbar-brand{
+  display: block;
+}
+
+.navbar-fixed-top .navbar-brand2{
+  display: none;
+  margin-left: 40px;
+}
+
+.navbar-brand>img {
+  height: 60px;
+}
+
+.navbar>.container .navbar-brand{
+  height: auto;
+}
+
+.navbar-nav>li>a{
+  color: #78736A;
+  height: 61px;
+  width: 80px;
+  text-align: center;
+  padding: 35px 0 0 0;
+  margin-left: 15px;
+  transition: padding .5s ease-in-out;
+}
+
+.nav>li>a:focus{
+    background: none;
+}
+
+.navbar-nav>li.active>a,.navbar-nav>li>a:hover{
+  color: #92A54D;
+  background: none;
+  font-weight: bold;
+}
+
+.top-nav-collapse {
+    padding: 0 !important;
+}
+
+.top-nav-collapse .navbar-brand{
+  display: none;
+}
+
+.top-nav-collapse .navbar-brand2{
+  display: block;
+  margin-top: 10px;
+}
+
+.top-nav-collapse .navbar-brand2>img {
+  height: 40px;
+}
+
+.top-nav-collapse .navbar-nav>li>a{
+  padding: 20px 0 0 0;
+}
+
+/* Temp area for testing */
+body{
+  position: relative;
+}
+
+#about-us, #team, #contact{
+  height: 600px;
+}
+
+/* fin temp*/
+
+/* Section Home */
+#home{
+  background: url('../images/banner.jpg') top;
+  background-size: cover;
+  padding-top: 90px;
+}
+
+/* Section Services */
+/* service circle effect */
+.ch-grid .single-item {
+	width: 220px;
+	height: 220px;
+	margin-top: 15%;
+  align-content: center;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow:
+		inset 0 0 0 16px rgba(253,246,227,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img{
+	background-image: url(../images/brand-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-img-2 {
+	background-image: url(../images/brand-min.png);
+  background-repeat: no-repeat;
+}
+
+.ch-img-3 {
+	background-image: url(../images/brand-min.png);
+}
+
+.ch-info {
+	position: absolute;
+	background: rgba(126, 79, 62, 0.8);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 45px 0 0 0;
+	height: 140px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+}
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+	box-shadow:
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+
+#services .item{
+  height: 500px;
+}
+
+  /* service circle effect end*/
