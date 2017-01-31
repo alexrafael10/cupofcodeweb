@@ -2,7 +2,9 @@
 <html ng-app="MainApp">
 <head>
   <title>Cup Of Code</title>
-
+  <link rel="icon"
+  type="image/png"
+  href="images/brand-min.png">
   <!-- metas -->
   <meta charset="utf-8">
   <meta name="Robots" content="index, follow">
@@ -12,6 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/scrolling-nav.css">
+  <link rel="stylesheet" href="/css/skillbar.css">
 </head>
 <body ng-controller="mainController" class="ng-cloak" data-spy="scroll"
 data-target=".navbar">
@@ -45,13 +48,12 @@ data-target=".navbar">
 </nav>
 
 <section id="home">
-
 </section>
 
 <section id="services">
   <div class="container">
-    <h2> Nuestros Servicios</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+    <h2 class="section-title"> Nuestros Servicios</h2>
+    <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
     <div class="ch-grid">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
@@ -60,8 +62,8 @@ data-target=".navbar">
               <div class="ch-item ch-img">
               </div>
               <div class="item-text">
-                <h4> Item</h4>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                <h4 class="text-center"> Desarrollo Web</h4>
+                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
               </div>
             </div>
           </div>
@@ -69,11 +71,11 @@ data-target=".navbar">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="item">
             <div class="single-item center-block">
-              <div class="ch-item ch-img">
+              <div class="ch-item ch-img-1">
               </div>
               <div class="item-text">
-                <h4> Item</h4>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                <h4 class="text-center"> Responsive</h4>
+                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
               </div>
             </div>
           </div>
@@ -81,11 +83,11 @@ data-target=".navbar">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="item">
             <div class="single-item center-block">
-              <div class="ch-item ch-img">
+              <div class="ch-item ch-img-2">
               </div>
               <div class="item-text">
-                <h4> Item</h4>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                <h4 class="text-center"> Dinamica</h4>
+                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
               </div>
             </div>
           </div>
@@ -93,11 +95,11 @@ data-target=".navbar">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="item">
             <div class="single-item center-block">
-              <div class="ch-item ch-img">
+              <div class="ch-item ch-img-3">
               </div>
               <div class="item-text">
-                <h4> Item</h4>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                <h4 class="text-center"> Estilo</h4>
+                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
               </div>
             </div>
           </div>
@@ -107,25 +109,367 @@ data-target=".navbar">
   </div>
 </section>
 
+<section id="fast-contact" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="banner">
+      <div class="row">
+        <div class="col-sm-10">
+          <h3> ¿Deseas contactarnos de inmediato? No pierdas mas tiempo</h3>
+        </div>
+        <div class="col-sm-2">
+          <a class="btn btn-primary center-block page-scroll"href="#contact"> Ir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="about-us">
-  <h1> about </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="about-text">
+          <h2 class="title"> <span>Conoce</span> Cup of Code</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="about-image">
+          <img class="img-responsive" src="images/about.png" alt="about-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <h2 class="section-title"> Proceso de Trabajo</h2>
+    <p class="text-center"> Nuestro proceso de llevar su web soñada, a una realidad</p>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1">
+        <div class="line"></div>
+        <div class="process-item item-1">
+          <div class="process-item-img process-image-1"></div>
+        </div>
+        <p class=" item-title text-center"> Idea</p>
+      </div>
+      <div class="col-md-2">
+        <div class="line"></div>
+        <div class="process-item item-2">
+          <div class="process-item-img process-image-2"></div>
+        </div>
+        <p class=" item-title text-center"> Propuesta</p>
+      </div>
+      <div class="col-md-2">
+        <div class="line"></div>
+        <div class="process-item item-3">
+          <div class="process-item-img process-image-3"></div>
+        </div>
+        <p class=" item-title text-center"> Diseño</p>
+      </div>
+      <div class="col-md-2">
+        <div class="line"></div>
+        <div class="process-item item-4">
+          <div class="process-item-img process-image-4"></div>
+        </div>
+        <p class=" item-title text-center"> Desarrollo</p>
+      </div>
+      <div class="col-md-2">
+        <div class="process-item item-5">
+          <div class="process-item-img process-image-5"></div>
+        </div>
+        <p class=" item-title text-center"> Lanzamiento</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="team">
-  <h1> Team </h1>
+  <div class="container">
+    <h2 class="section-title"> Nuestro equipo </h2>
+    <div class="row">
+        <div class="personal-info">
+          <div class="row">
+            <div class="col-md-offset-4 col-md-2">
+              <img class="toggle-1 img-responsive img-thumbnail pull-right active" src="images/profile1.png"
+              alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="toggle-2 img-responsive img-thumbnail pull-right" src="images/profile2.png"
+              alt="">
+            </div>
+          </div>
+        </div>
+        <div class="detail-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3> Alexis Rondón</h3>
+              <h6> Desarrollador Web</h6>
+              <p>
+                <ul>
+                  <li class="twitter"> <a target="_blank" href="https://twitter.com/"></a> </li>
+                  <li class="instagram"> <a target="_blank" href="https://www.instagram.com/"></a> </li>
+                </ul>
+              </p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+            </div>
+            <div class="col-md-6">
+              <div class="wraper">
+                <div class="skillst10">
+                  <div class="skillbar" data-percent="65%">
+                    <div class="count-bar">
+                      <div class="title">HTML 5</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="79%">
+                    <div class="count-bar">
+                      <div class="title">CSS 3</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="count-bar">
+                      <div class="title">PHP</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="count-bar">
+                      <div class="title">SEO</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-2" style="display:none">
+          <div class="row">
+            <div class="col-md-6">
+              <h3> Luisana Sandoval</h3>
+              <h6> Desarrollador Web</h6>
+              <p>
+                <ul>
+                  <li class="twitter"> <a target="_blank" href="https://twitter.com/"></a> </li>
+                  <li class="instagram"> <a target="_blank" href="https://www.instagram.com/"></a> </li>
+                </ul>
+              </p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+            </div>
+            <div class="col-md-6">
+              <div class="wraper">
+                <div class="skillst10">
+                  <div class="skillbar" data-percent="65%">
+                    <div class="count-bar">
+                      <div class="title">HTML 5</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="79%">
+                    <div class="count-bar">
+                      <div class="title">CSS 3</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="count-bar">
+                      <div class="title">PHP</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="count-bar">
+                      <div class="title">SEO</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- <div class="col-xs-6">
+        <div class="personal-info">
+          <div class="row">
+            <div class="col-xs-6">
+              <img class="img-responsive img-thumbnail pull-right" src="images/profile2.jpg"
+              alt="">
+            </div>
+            <div class="col-xs-6">
+              <h3> Luisana Sandoval</h3>
+              <h6> Desarrollador Web</h6>
+              <p>
+                <ul>
+                  <li class="twitter"> <a target="_blank" href="https://twitter.com/"></a> </li>
+                  <li class="instagram"> <a target="_blank" href="https://www.instagram.com/"></a> </li>
+                </ul>
+              </p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="wraper">
+                <div class="skillst10">
+                  <div class="skillbar" data-percent="65%">
+                    <div class="count-bar">
+                      <div class="title">HTML 5</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="79%">
+                    <div class="count-bar">
+                      <div class="title">CSS 3</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="count-bar">
+                      <div class="title">PHP</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="count-bar">
+                      <div class="title">SEO</div>
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-  <h1> Contact </h1>
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="row contact-info">
+      <div class="col-md-6">
+        <div class="info-item ">
+          <div class="item-image-1 center-block"></div>
+          <p class="text-center phone"> +58-416-0848933 </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-item">
+          <div class="item-image-2 center-block"></div>
+          <p class="text-center mail"> master@cupofcodeteam.com </p>
+        </div>
+      </div>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Nombre">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Correo">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="tel" class="form-control" id="number" placeholder="Teléfono">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="subject" placeholder="Asunto">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <textarea id="content" class="form-control" placeholder="Mensaje" rows="8"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <button class="btn btn-primary center-block" id="submit" type="submit" >Enviar Mensaje</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </section>
 
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-sec-1 col-md-5">
+        <h3 class="title"> SITIO </h3>
+        <ul class="footer-links">
+          <li> <a class="page-scroll" href="#home">Inicio </a></li>
+          <li> <a class="page-scroll" href="#services"> Servicios</a></li>
+          <li> <a class="page-scroll" href="#about-us"> Nosotros</a></li>
+          <li> <a class="page-scroll" href="#team"> Equipo</a></li>
+          <li> <a class="page-scroll" href="#contact"> Contacto</a> </li>
+        </ul>
+      </div>
+      <div class="col-xs-2">
+        <img src="images/brand-min.png" alt="">
+      </div>
+      <div class="footer-sec-2 col-md-4">
+        <h3 class="title"> SOCIAL </h3>
+        <ul>
+          <li class="twitter"> <a target="_blank" href="https://twitter.com/"></a> </li>
+          <li class="instagram"> <a target="_blank" href="https://www.instagram.com/"></a> </li>
+        </ul>
+      </div>
+    </div>
+    <h5>Copiright 2017 &copy; Cup of code Team.</h5>
+  </div>
+</section>
+<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.flaticon.com/authors/iconnice" title="Iconnice">Iconnice</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 <!-- Scrips -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 <script type="text/javascript" src="js/core.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="js/scrolling-nav.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.stellar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.compatibility.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 

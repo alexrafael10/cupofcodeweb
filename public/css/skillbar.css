@@ -1,0 +1,74 @@
+
+.wraper{
+	width:auto;
+	margin:50px auto;
+}
+
+.wraper:before,
+.wraper:after {
+  display: table;
+  content: " ";
+}
+
+.wraper:after{
+  clear: both;
+}
+
+/* Skills Style 10 */
+
+
+.skillst10{
+	width:100%;
+	color:#fff;
+}
+.skillst10 .skillbar{
+	width: 100%;
+	height: 23px;
+	position:relative;
+	margin-bottom:30px;
+	background-color: #edebec;
+	box-sizing:border-box;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.skillst10 .count-bar{
+	height: 100%;
+	width:0px;
+	position:relative;
+  height: 23px;
+	background-color: #92A54D;
+  border-radius: 2px;
+
+}
+.skillst10 .title{
+	line-height: 21px;
+	font-size: 13px;
+	font-weight:400;
+	padding-left:12px;
+	text-transform:uppercase;
+	color: #f8f8f8;
+}
+.skillst10 .count{
+	position:absolute;
+	top:0;
+	right:-45px;
+	line-height: 21px;
+	font-size: 15px;
+	font-weight:700;
+	color:#92a54d;
+}
+
+/* Skills Style 10 */
+
+
+
+/*Coustom Media Query Css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
