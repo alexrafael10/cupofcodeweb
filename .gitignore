@@ -45,3 +45,5 @@ jspm_packages
 images
 assets
 .jpg
+
+!brand-min.png
