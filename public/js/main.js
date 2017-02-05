@@ -15,15 +15,24 @@ $( document).ready(function()
 
     var name,email,number,subject,content;
     $("#submit").click(function(){
-      name = $("#name").val();
-      email = $("#email").val();
-      number = $("#number").val();
-      subject = $("#subject").val();
-      content = $("#content").val();
+      if (!$("#submit").hasClass("disabled")){
+        name = $("#name").val();
+        email = $("#email").val();
+        number = $("#number").val();
+        subject = $("#subject").val();
+        content = $("#content").val();
 
-      $.post("/send",{name:name, email:email,number:number,subject:subject,content:content} ,function(data) {
+        $.post("/send",{name:name, email:email,number:number,subject:subject,content:content} ,function(data,status) {
+          if (status == 'success'){
+            alert("Mensaje Enviado!");
+            $("#contact-form").trigger("reset");
+          }else{
+            alert("Error");
+          }
+        });
+      }
 
-      } );
+
     });
 
 		$.stellar();

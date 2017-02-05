@@ -44,13 +44,17 @@ app.post('/send', function(req, res) {
     subject: req.body.subject,
     text: req.body.content + " - Correo: " + req.body.email + " - Telefono: "
       + req.body.number
-  }, function (error){
-    if (error){
-      console.log(error);
+  }, function (error,info){
+    if(error){
+        res.status('401').json({err: info});
+        console.log("error");
     }else{
-      console.log("Message sent");
+        res.status('200').json({success: true});
+        console.log("send");
+        smtpTransport.close();
     }
   });
+
 });
 
 app.use('/', index);
