@@ -37,12 +37,11 @@ jspm_packages
 .node_repl_history
 
 #images
-.jpg
-.jpeg
-.png
-.gif
+*.jpg
+*.jpeg
+*.png
+*.gif
 
-images
 assets
 .jpg
 
