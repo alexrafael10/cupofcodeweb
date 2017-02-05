@@ -10,20 +10,6 @@ var mail = require('./routes/send');
 
 var app = express();
 
-//mail
-var nodemailer = require('nodemailer');
-
-var smtpTransport = nodemailer.createTransport({
-  host: "smtp.zoho.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: 'master@cupofcodeteam.com',
-    pass: 'nullpointerex'
-  }
-});
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -36,26 +22,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.post('/send', function(req, res) {
-  smtpTransport.sendMail({
-    from: req.body.name +" <master@cupofcodeteam.com>",
-    to: "Alexis Rondon <alexrafael10@gmail.com>,Luisana Sandoval <luisanasandoval94@gmail.com> ",
-    subject: req.body.subject,
-    text: req.body.content + " - Correo: " + req.body.email + " - Telefono: "
-      + req.body.number
-  }, function (error,info){
-    if(error){
-        res.status('401').json({err: info});
-        console.log("error");
-    }else{
-        res.status('200').json({success: true});
-        console.log("send");
-        smtpTransport.close();
-    }
-  });
-
-});
 
 app.use('/', index);
 
